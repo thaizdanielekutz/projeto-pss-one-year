@@ -13,9 +13,27 @@
     <div class="container">
       <h2>Resolução de questões</h2>
       <h3>1.1.1 Conjuntos numéricos</h3>
-      <img src="" alt="" />
-      <img src="" alt="" />
+      <img src="image/img.png" alt="" />
+      <br />
+      <button id="reveal-button">Resolução</button>
+      <p id="hidden-paragraph" class="hidden-text">
+        Este é o texto que será revelado quando o botão for clicado.
+      </p>
+
       <h3>1.1.2 Operações com números reais</h3>
     </div>
+    <script>
+      const revealButton = document.getElementById("reveal-button");
+      const hiddenParagraph = document.getElementById("hidden-paragraph");
+
+      revealButton.addEventListener("click", () => {
+        hiddenParagraph.classList.toggle("hidden-text");
+        if (hiddenParagraph.classList.contains("hidden-text")) {
+          revealButton.textContent = "Resolução";
+        } else {
+          revealButton.textContent = "Ocultar Texto";
+        }
+      });
+    </script>
   </body>
 </html>

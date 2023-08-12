@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botão Revelar Texto</title>
+<style>
+  .hidden-text {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <button id="reveal-button">Revelar Texto</button>
+  <p id="hidden-paragraph" class="hidden-text">Este é o texto que será revelado quando o botão for clicado.</p>
+
+  <script>
+    const revealButton = document.getElementById('reveal-button');
+    const hiddenParagraph = document.getElementById('hidden-paragraph');
+
+    revealButton.addEventListener('click', () => {
+      hiddenParagraph.classList.toggle('hidden-text');
+      if (hiddenParagraph.classList.contains('hidden-text')) {
+        revealButton.textContent = 'Revelar Texto';
+      } else {
+        revealButton.textContent = 'Ocultar Texto';
+      }
+    });
+  </script>
+</body>
+</html>
