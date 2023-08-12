@@ -24,6 +24,7 @@ header {
   color: var(--color02);
   margin-bottom: 3rem;
 }
+
 header h2 {
   margin-top: 1.3rem;
   color: var(--color02);
@@ -43,7 +44,7 @@ header h1 {
 
 .card {
   width: 280px;
-  height: 230px;
+  height: 180px;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
@@ -63,6 +64,19 @@ header h1 {
   text-align: center;
   color: white;
   font-size: 1rem;
+}
+.card button {
+  padding: 0.7rem;
+  background-color: var(--color03);
+  border-radius: 5px;
+  margin-top: 1.1rem;
+}
+.card a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: "Roboto";
 }
 
 footer {
