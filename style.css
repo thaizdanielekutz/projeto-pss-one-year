@@ -2,12 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --color01: #810dff;
-  --color02: #19ff85;
-  --color03: #0c2b3e;
+  max-height: 100%;
 }
 
 body {
@@ -25,6 +20,7 @@ body {
   color: #fff;
   text-align: center;
   padding: 30px;
+  width: 100%;
 }
 
 .container {
@@ -62,4 +58,12 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
